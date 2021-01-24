@@ -156,4 +156,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+
+textarea {
+  background-color: #777;
+  color: #fff;
+}
+
+.svd-embed-survey-tab .row {
+  display: none;
+}
 </style>
+

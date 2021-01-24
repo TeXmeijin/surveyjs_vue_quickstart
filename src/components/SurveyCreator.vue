@@ -10,6 +10,9 @@ import * as SurveyKo from "survey-knockout";
 import * as widgets from "surveyjs-widgets";
 import { init as customWidget } from "../components/customwidget";
 
+SurveyCreator.StylesManager.applyTheme("darkblue");
+console.log('darkblue');
+
 // widgets.icheck(SurveyKo);
 widgets.select2(SurveyKo);
 widgets.inputmask(SurveyKo);
@@ -53,6 +56,8 @@ export default {
   },
   mounted() {
     let options = { showEmbededSurveyTab: true };
+    SurveyCreator.StylesManager.applyTheme("darkrose");
+
     this.surveyCreator = new SurveyCreator.SurveyCreator(
       "surveyCreatorContainer",
       options
